@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- // Manipulación del DOM -->
+    <!-- // Aprender a interactuar con el Document Object Model (DOM) es crucial para el desarrollo web. -->
+    <p id="demo">Hola Mundo!</p>
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
+
+    <script>
+        function cambiarTexto() {
+            document.getElementById("demo").innerHTML = "Texto cambiado!";
+        }
+    </script>
+
+
+
+
+
+
+<!-- Manipulación Avanzada del DOM -->
+<!-- Trabajar con eventos y la creación dinámica de elementos del DOM. -->
+<ul id="lista"></ul>
+    <button onclick="agregarElemento()">Agregar Elemento</button>
+
+    <script>
+        function agregarElemento() {
+            let li = document.createElement("li");
+            li.textContent = "Nuevo Elemento";
+            document.getElementById("lista").appendChild(li);
+        }
+    </script>
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/avanzado.js"></script>
+</body>
+
+</html>
